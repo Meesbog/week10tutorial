@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "width": 450,
+  "height": 240,
+  "title": "GDP per capita",
+  "data": {"url":"top_six_economies.csv"},
+  "mark": "line",
+  "encoding": {
+  "x": {"field": "Year", "type": "temporal", "title":null},
+  "y": {"field": "GDP per capita (current US$)", "type": "quantitative"},
+  "color": {"field": "Country Name", "type": "nominal", "scale": {"scheme": "set1"},
+  "legend": null},
+  "tooltip": [
+    {"field": "Country Name", "type": "nominal"},
+    {"field": "GDP per capita (current US$)", "type": "quantitative"}]}}
